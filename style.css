@@ -1,5 +1,7 @@
 /* importing the font from the below url */
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&family=Roboto&display=swap');
+
 
 
 *{
@@ -34,7 +36,7 @@ nav ul{
 
 /* now the css for game container */
 .game_container{
-    background-color: rgb(132, 132, 175);
+    background-color: whitesmoke;
     display: flex;
     /* tells where my content should be */
     justify-content: center;
@@ -42,3 +44,58 @@ nav ul{
     margin-top: 30px;
 }
 /* css for the container */
+.container{
+    /* diaplay the content in the form of a grid */
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family:'Alegreya Sans SC', sans-serif;
+
+}
+
+.box{
+    /* border size of the box */
+    border: 2px solid black;
+    /* font of x in the box */
+    font-size: 8vw;
+    /* if the cursor gies in the box change color of the box */
+    cursor: pointer;
+    /* puts the content in the center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    /* color for hover */
+    background-color: rgb(184, 133, 231);
+}
+
+/* padding for game info */
+
+.game_information{
+
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.image_box img{
+    /* dealing with the victory gif */
+    display:none;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom:0 ;
+}

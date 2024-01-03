@@ -29,24 +29,29 @@
         <!-- first let us make the game for which i will need another conatiner -->
         <div class="container">
             <!-- here each line represents each box from the grid -->
+            <div class="box bt-0 bl-0"><span class="box_text">X</spans></div>
+            <div class="box bt-0"><span class="box_text">X</spans></div>    
+            <div class="box bt-0 br-0"><span class="box_text">X</spans></div>
+            <div class="box bl-0"><span class="box_text">X</spans></div>
             <div class="box"><span class="box_text">X</spans></div>
-            <div class="box"><span class="box_text">X</spans></div>    
-            <div class="box"><span class="box_text">X</spans></div>
-            <div class="box"><span class="box_text">X</spans></div>
-            <div class="box"><span class="box_text">X</spans></div>
-            <div class="box"><span class="box_text">X</spans></div>
-            <div class="box"><span class="box_text">X</spans></div>
-            <div class="box"><span class="box_text">X</spans></div>
-            <div class="box"><span class="box_text">X</spans></div>
+            <div class="box br-0"><span class="box_text">X</spans></div>
+            <div class="box bl-0 bb-0"><span class="box_text">X</spans></div>
+            <div class="box bb-0"><span class="box_text">X</spans></div>
+            <div class="box bb-0 br-0"><span class="box_text">X</spans></div>
         </div>
         <!-- making a container for the information -->
         <div class="game_information">
             <h1>Welcome to TIC TAC Toe</h1>
             <div>
                 <!-- this span will have all the information -->
-                <span class="info"></span>
+                <span class="info">Turn for X</span>
                 <!-- a button for reset -->
                 <button id="reset">RESET_GAME</button>
+                <!-- adding a gif in case of victory -->
+                <div class="image_box">
+                    <!-- image is already downloaded -->
+                    <img src="victory.gif" alt="">
+                </div>
             </div>
         </div>
     </div>
