@@ -21,6 +21,36 @@
             <li>Amruths_Tic_Tac.com</li>
         </u1>
     </nav>
+
+    <!-- adding a game container that will have my entire game in it -->
+    <div class="game_container">
+        <!-- i will have 2 sections , the game to the left and the score to the right -->
+
+        <!-- first let us make the game for which i will need another conatiner -->
+        <div class="container">
+            <!-- here each line represents each box from the grid -->
+            <div class="box"><span class="box_text">X</spans></div>
+            <div class="box"><span class="box_text">X</spans></div>    
+            <div class="box"><span class="box_text">X</spans></div>
+            <div class="box"><span class="box_text">X</spans></div>
+            <div class="box"><span class="box_text">X</spans></div>
+            <div class="box"><span class="box_text">X</spans></div>
+            <div class="box"><span class="box_text">X</spans></div>
+            <div class="box"><span class="box_text">X</spans></div>
+            <div class="box"><span class="box_text">X</spans></div>
+        </div>
+        <!-- making a container for the information -->
+        <div class="game_information">
+            <h1>Welcome to TIC TAC Toe</h1>
+            <div>
+                <!-- this span will have all the information -->
+                <span class="info"></span>
+                <!-- a button for reset -->
+                <button id="reset">RESET_GAME</button>
+            </div>
+        </div>
+    </div>
+    
     <!-- adding a js file -->
     <script src="script.js"></script>
 </body>

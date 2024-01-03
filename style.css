@@ -1,0 +1,44 @@
+/* importing the font from the below url */
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&display=swap');
+
+
+*{
+
+    margin:0;
+    padding:0;
+}
+
+/* we are styling the navigation bar here */
+nav{
+    /* background color of the bar */
+    background-color: rgb(0, 0, 0);
+    /* color of the text */
+    color: white;
+    /* height of the bar */
+    height: 65pxpx;
+    /* font of the words */
+    font-size: 27px;
+    /* ??? */
+    display: flex;
+    /* ??? */
+    align-items: center;
+    /* gives slight padding */
+    padding: 0 12px;  
+    /* importing a google font */
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+nav ul{
+    list-style-type: none ;
+}
+
+/* now the css for game container */
+.game_container{
+    background-color: rgb(132, 132, 175);
+    display: flex;
+    /* tells where my content should be */
+    justify-content: center;
+    /* gives the separation between the  */
+    margin-top: 30px;
+}
+/* css for the container */
