@@ -1,87 +1,78 @@
-/* importing the font from the below url */
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,300&family=Roboto&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
 *{
-
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-/* we are styling the navigation bar here */
+/* this gives the property if the navigation bar */
 nav{
-    /* background color of the bar */
-    background-color: rgb(0, 0, 0);
-    /* color of the text */
+    /* background color */
+    background-color: rgb(230, 116, 230);
+    /* color of the words */
     color: white;
-    /* height of the bar */
-    height: 65pxpx;
-    /* font of the words */
+    /* height of the navigation bar */
+    height: 65px;
+    /* font size of the navigation bar */
     font-size: 27px;
-    /* ??? */
+    /* the way the text is displayed */
     display: flex;
-    /* ??? */
     align-items: center;
-    /* gives slight padding */
-    padding: 0 12px;  
-    /* importing a google font */
-    font-family: 'Alegreya Sans SC', sans-serif;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav ul{
-    list-style-type: none ;
+    list-style-type: none;
 }
 
-/* now the css for game container */
-.game_container{
-    background-color: whitesmoke;
+/* about the game container */
+.gameContainer{ 
     display: flex;
-    /* tells where my content should be */
     justify-content: center;
-    /* gives the separation between the  */
-    margin-top: 30px;
+    margin-top: 50px;
 }
-/* css for the container */
+
+/* properties about the tic tac toe grid */
 .container{
-    /* diaplay the content in the form of a grid */
     display: grid;
+    grid-template-rows: repeat(3, 10vw);
     grid-template-columns: repeat(3, 10vw);
-    grid-template-columns: repeat(3, 10vw);
-    font-family:'Alegreya Sans SC', sans-serif;
-
+    font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
+/* properties about each box in the grid */
 .box{
-    /* border size of the box */
     border: 2px solid black;
-    /* font of x in the box */
     font-size: 8vw;
-    /* if the cursor gies in the box change color of the box */
     cursor: pointer;
-    /* puts the content in the center */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* when you hover over a box, you get a new color */
 .box:hover{
-    /* color for hover */
-    background-color: rgb(184, 133, 231);
+    background-color: rgb(199, 10, 92);
 }
 
-/* padding for game info */
 
-.game_information{
+.info {
+    font-size: 22px;
+}
 
+.gameInfo{
     padding: 0 34px;
     font-family: 'Baloo Bhaina 2', cursive;
 }
 
-.image_box img{
-    /* dealing with the victory gif */
-    display:none;
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+/* properties of the victory image */
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
 }
 
 .br-0{
@@ -97,5 +88,44 @@ nav ul{
 }
 
 .bb-0{
-    border-bottom:0 ;
+    border-bottom: 0;
+}
+
+/* properties if the reset button */
+#reset {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: #f3e7f9;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container { 
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
 }
